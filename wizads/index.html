@@ -31,10 +31,9 @@
 
 <body>
   <div class="hero_area">
-    <video id="hero_video" autoplay muted loop>
+    <video class="hero_video" autoplay muted loop>
       <source src="images/home-vdo.mp4" type="video/mp4">
     </video>
-    
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
@@ -682,10 +681,6 @@
   </script>
   <!-- owl carousel script 
     -->
-    <script>
-      var video = document.getElementById('hero_video');
-      video.play();
-    </script>
   <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
       loop: true,
@@ -703,6 +698,10 @@
         }
       }
     });
+  </script>
+  <script>
+    var video = document.getElementById('hero_video');
+    video.play();
   </script>
   <!-- end owl carousel script -->
 
